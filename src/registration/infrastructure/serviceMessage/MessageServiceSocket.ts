@@ -4,7 +4,7 @@ import { IMessageService } from '../../application/services/IMessageService';
 
 export class MessageServiceSocket implements IMessageService{
     sendMessage(registration: Registration): string {
-        const socket = io('https://socketserver-ybwx.onrender.com');
+        const socket = io('https://socket-server-6354.onrender.com');
 
         socket.on("connect", ()=>{
             console.log("Connected to server");
